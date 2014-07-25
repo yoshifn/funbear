@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/funbear/1' => 'application#first'
   get '/funbear/2' => 'application#second'
   get '/funbear/3' => 'application#third'
+  get '/new_profile' => 'application#new'
+  get '/create_profile' => 'application#create'
 end

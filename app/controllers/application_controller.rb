@@ -16,4 +16,18 @@ class ApplicationController < ActionController::Base
     f.save
     redirect_to "/funbear/#{ f.id }"
   end
+  def edit
+    @anything = Fundawg.find_by_id(params['id'])
+  end
+  
+  def update 
+    f = Fundawg.find_by_id(params['id'])
+    f.name = params['name']
+    f.memberstatus = params['memberstatus']
+    f.picture = params['picture']
+    f.bio = params['bio']
+    f.location = params['location']
+    f.save
+    redirect_to "/funbear/#{ f.id }"
+  end
 end

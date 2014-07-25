@@ -1,0 +1,12 @@
+<h2>Edit Profile</h2>
+
+<form action="/update_profile/<%= @anything.id %>">
+  <input type="text" name ="name" placeholder="Name" value="<%= @anything.name %>" >
+  <input type="text" name ="memberstatus" placeholder="Since 2014" value="<%= @anything.memberstatus %>">
+  <input type="text" name ="picture" placeholder="image url" value="<%= @anything.picture %>"> 
+  <input type="text" name ="bio" placeholder="Bio" value="<%= @anything.bio %>">
+  <input type="text" name ="location" placeholder="AMERICA" value="<%= @anything.location %>">
+
+
+  <input type="submit"> 
+         </form>

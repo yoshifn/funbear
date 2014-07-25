@@ -1,4 +1,4 @@
-<h2><b><%=@anything.name%></b></h2></a> <p class="pine"><%=@anything.memberstatus%></p>
+<h2><b><%=@anything.name%></b></h2> <p class="pine"><%=@anything.memberstatus%></p>
 <div class="container">
   <div class="row">
       <div class = "col-md-4"><img src="<%=@anything.picture=%>" alt="" width="350px" height="250px"></div>
@@ -13,4 +13,7 @@
 </div>
       </div>
   </div>
+</div>
+<div>
+  <a href="/funbear/<%= @anything.id %>/edit">edit</a>
 </div>

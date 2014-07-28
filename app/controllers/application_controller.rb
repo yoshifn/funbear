@@ -30,4 +30,9 @@ class ApplicationController < ActionController::Base
     f.save
     redirect_to "/funbear/#{ f.id }"
   end
+  
+  def destroy
+    f = Fundawg.find_by_id(params['id'])
+    f.destroy
+  end
 end

@@ -35,4 +35,9 @@ class ApplicationController < ActionController::Base
     f = Fundawg.find_by_id(params['id'])
     f.destroy
   end
+  
+  def index
+    @anything = Fundawg.all
+  end
+
 end
